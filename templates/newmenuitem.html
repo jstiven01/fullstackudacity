@@ -1,17 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>New Menu Item</title>
-	<link rel=stylesheet type=text/css href='{{ url_for('static', filename='styles.css') }}'>
+    <meta charset="UTF-8">
+    <title>New Menu Item</title>
 </head>
 <body>
-	<div class="pane">
-		<h1>New Menu Item</h1>
-		<form action="{{ url_for('newMenuItem',restaurant_id = restaurant_id)}}" method="post">
-			<p>Name:</p>
-			<input type="text" name="nameitem" size="30">
-			<input type="submit" value="Create">
-		</form>
-	</div>
+	<h1>{{ restaurant_name }}</h1>
+    <h2>New Menu Item</h2>
+    <form action="#" method="post">
+        <p>Name: </p>
+        <input type="text" name="namemenu">
+		<p>Course: </p>
+		<input type="text" name="coursemenu">
+		<p>Price: </p>
+		<input type="text" name="pricemenu">
+		<p>Description: </p>
+		<input type="text" name="descripmenu">
+		<br><br>
+        <input type="submit" value="New">
+        <a href="#">Cancel</a>
+    </form>
 </body>
 </html>
