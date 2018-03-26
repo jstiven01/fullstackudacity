@@ -6,11 +6,11 @@
 </head>
 <body>
     <h1>New Restaurant</h1>
-    <form action="#" method="post">
+    <form action="{{ url_for('newRestaurant') }}" method="post">
         <p>Name: </p>
         <input type="text" name="newrest">
         <input type="submit" value="New">
-        <a href="#">Cancel</a>
+        <a href="/restaurants">Cancel</a>
     </form>
 </body>
 </html>

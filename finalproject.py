@@ -1,6 +1,17 @@
-from flask import Flask,render_template, flash
+from flask import Flask,render_template, flash, request, url_for, redirect
 from os import urandom #Secret key
 app = Flask(__name__)
+
+#Database MAnagement
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+from database_setup import Base, Restaurant, MenuItem
+
+#Creating connectio to database
+engine = create_engine('sqlite:///restaurantmenu.db')
+Base.metadata.bind = engine
+DBSession = sessionmaker(bind =engine)
+session = DBSession()
 
 #Dictionaries for testing
 #Fake Restaurants
@@ -17,25 +28,45 @@ item =  {'name':'Cheese Pizza','description':'made with fresh cheese','price':'$
 @app.route('/')
 @app.route('/restaurants')
 def showRestaurants():
-	return render_template('restaurants.html',restaurants = restaurants)
+    restaurants = session.query(Restaurant).all()
+    return render_template('restaurants.html',restaurants = restaurants)
 
 #Create new restaurant
-@app.route('/restaurant/new')
+@app.route('/restaurant/new', methods = ['GET','POST'])
 def newRestaurant():
-    flash("New Restaurant Created!")
-    return render_template('newrestaurant.html')
+    if request.method == 'POST':
+        newRestaurant = Restaurant(name = request.form['newrest'])
+        session.add(newRestaurant)
+        session.commit()
+        flash("New Restaurant Created!")
+        return redirect(url_for('showRestaurants'))
+    else:
+        return render_template('newrestaurant.html')
 
 #Edit restaurant
-@app.route('/restaurant/<int:restaurant_id>/edit')
+@app.route('/restaurant/<int:restaurant_id>/edit', methods = ['GET','POST'])
 def editRestaurant(restaurant_id):
-    flash("Restaurant Edited!")
-    return render_template('editrestaurant.html', restaurant_name = restaurant["name"])
+    EditedRestaurant = session.query(Restaurant).filter_by(id=restaurant_id).one()
+    if request.method == 'POST':
+        EditedRestaurant.name = request.form['editrest']
+        session.add(EditedRestaurant)
+        session.commit()
+        flash("Restaurant Edited!")
+        return redirect(url_for('showRestaurants'))
+    else:
+        return render_template('editrestaurant.html', restaurant = EditedRestaurant)
 
 #Delete restaurant
-@app.route('/restaurant/<int:restaurant_id>/delete')
+@app.route('/restaurant/<int:restaurant_id>/delete', methods = ['GET','POST'])
 def deleteRestaurant(restaurant_id):
-    flash("Restaurant Deleted!")
-    return render_template('deleterestaurant.html', restaurant_name=restaurant["name"])
+    deletedRestaurant = session.query(Restaurant).filter_by(id = restaurant_id).one()
+    if request.method == 'POST':
+        session.delete(deletedRestaurant)
+        session.commit()
+        flash("Restaurant Deleted!")
+        return redirect(url_for('showRestaurants'))
+    else:
+        return render_template('deleterestaurant.html', restaurant = deletedRestaurant)
 
 
 #Show Restaurant's menu

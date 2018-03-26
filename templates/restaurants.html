@@ -18,11 +18,12 @@
 		{% endwith %}
 	</div>
 
-	<a href="#">Create a New Restaurant</a>
+	<a href="{{ url_for('newRestaurant') }}">Create a New Restaurant</a>
 	{% for rest in restaurants %}
-		<p>{{ rest.name }}</p>
-		<a href = '#'>Edit Restaurant</a>
-		<a href = '#'>Delete Restaurant</a>
+		<h2>{{ rest.name }}</h2>
+		<a href="#">Menu</a>
+		<a href = "{{ url_for('editRestaurant',restaurant_id = rest.id) }}">Edit Restaurant</a>
+		<a href = "{{ url_for('deleteRestaurant',restaurant_id = rest.id) }}">Delete Restaurant</a>
 	{% endfor %}
 </body>
 </html>
