@@ -5,9 +5,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/finalproject.py" afterPath="$PROJECT_DIR$/finalproject.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/restaurantmenu.db" afterPath="$PROJECT_DIR$/restaurantmenu.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/deleterestaurant.html" afterPath="$PROJECT_DIR$/templates/deleterestaurant.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/editrestaurant.html" afterPath="$PROJECT_DIR$/templates/editrestaurant.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/newrestaurant.html" afterPath="$PROJECT_DIR$/templates/newrestaurant.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/deletemenuitem.html" afterPath="$PROJECT_DIR$/templates/deletemenuitem.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/editmenuitem.html" afterPath="$PROJECT_DIR$/templates/editmenuitem.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/menu.html" afterPath="$PROJECT_DIR$/templates/menu.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/newmenuitem.html" afterPath="$PROJECT_DIR$/templates/newmenuitem.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/restaurants.html" afterPath="$PROJECT_DIR$/templates/restaurants.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,8 +30,8 @@
       <file leaf-file-name="finalproject.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/finalproject.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="59" column="77" lean-forward="false" selection-start-line="59" selection-start-column="77" selection-end-line="59" selection-end-column="77" />
+            <state relative-caret-position="329">
+              <caret line="92" column="47" lean-forward="false" selection-start-line="92" selection-start-column="47" selection-end-line="92" selection-end-column="47" />
               <folding>
                 <element signature="e#0#74#0" expanded="true" />
               </folding>
@@ -38,34 +39,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="restaurants.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/restaurants.html">
+      <file leaf-file-name="editmenuitem.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/editmenuitem.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+            <state relative-caret-position="-152">
+              <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="deletemenuitem.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/deletemenuitem.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="newmenuitem.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/newmenuitem.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="17" column="71" lean-forward="false" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/menu.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="25" column="46" lean-forward="false" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
               <folding>
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="deleterestaurant.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/deleterestaurant.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="44" lean-forward="false" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="editrestaurant.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/editrestaurant.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -105,15 +116,15 @@
       <list>
         <option value="$PROJECT_DIR$/webserver.py" />
         <option value="$PROJECT_DIR$/FinalProject.py" />
-        <option value="$PROJECT_DIR$/templates/menu.html" />
-        <option value="$PROJECT_DIR$/templates/newmenuitem.html" />
-        <option value="$PROJECT_DIR$/templates/editmenuitem.html" />
-        <option value="$PROJECT_DIR$/templates/deletemenuitem.html" />
         <option value="$PROJECT_DIR$/templates/newrestaurant.html" />
         <option value="$PROJECT_DIR$/templates/editrestaurant.html" />
         <option value="$PROJECT_DIR$/templates/deleterestaurant.html" />
-        <option value="$PROJECT_DIR$/finalproject.py" />
         <option value="$PROJECT_DIR$/templates/restaurants.html" />
+        <option value="$PROJECT_DIR$/templates/menu.html" />
+        <option value="$PROJECT_DIR$/templates/editmenuitem.html" />
+        <option value="$PROJECT_DIR$/templates/deletemenuitem.html" />
+        <option value="$PROJECT_DIR$/finalproject.py" />
+        <option value="$PROJECT_DIR$/templates/newmenuitem.html" />
       </list>
     </option>
   </component>
@@ -312,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521894339116</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Adding Restaurant's CRUD operation&#10;Creating new link MENU into restaurant.html">
+      <created>1522075189363</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1522075189363</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -371,7 +389,8 @@
     <MESSAGE value="Creating Schema Routing (8 URL's)" />
     <MESSAGE value="Creating html about restaurants (new/edit/delete)&#10;Fake restaurants&#10;Adding flash messaging and superkey with random" />
     <MESSAGE value="Creating html about Menu (new/edit/delete)&#10;Modifying functions which support Menu's (new/edit/delete)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creating html about Menu (new/edit/delete)&#10;Modifying functions which support Menu's (new/edit/delete)" />
+    <MESSAGE value="Adding Restaurant's CRUD operation&#10;Creating new link MENU into restaurant.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Restaurant's CRUD operation&#10;Creating new link MENU into restaurant.html" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -426,7 +445,7 @@
         <state relative-caret-position="570">
           <caret line="42" column="8" lean-forward="false" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="39" />
           <folding>
-            <element signature="e#25#110#0" expanded="true" />
+            <element signature="e#25#110#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -453,6 +472,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -541,44 +561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/newmenuitem.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/editmenuitem.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/deletemenuitem.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database_setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/newrestaurant.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -592,33 +574,7 @@
         <state relative-caret-position="135">
           <caret line="36" column="76" lean-forward="true" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="76" />
           <folding>
-            <element signature="e#25#110#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/editrestaurant.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/deleterestaurant.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="44" lean-forward="false" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/finalproject.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="59" column="77" lean-forward="false" selection-start-line="59" selection-start-column="77" selection-end-line="59" selection-end-column="77" />
-          <folding>
-            <element signature="e#0#74#0" expanded="true" />
+            <element signature="e#25#110#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -634,7 +590,75 @@
     <entry file="file://$PROJECT_DIR$/templates/restaurants.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <caret line="23" column="63" lean-forward="false" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database_setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="19" column="7" lean-forward="false" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/deletemenuitem.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finalproject.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="92" column="47" lean-forward="false" selection-start-line="92" selection-start-column="47" selection-end-line="92" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/editmenuitem.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-152">
+          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/newmenuitem.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="71" lean-forward="false" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/deleterestaurant.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="44" lean-forward="false" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/editrestaurant.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="25" column="46" lean-forward="false" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>

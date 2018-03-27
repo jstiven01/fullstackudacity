@@ -5,7 +5,7 @@
     <title>Menu</title>
 </head>
 <body>
-	<h1>{{ restaurant_name }}'s Menu</h1>
+	<h1>{{ restaurant.name }}'s Menu</h1>
 	<div class="flash">
 		{% with messages = get_flashed_messages() %}
 			{% if messages %}
@@ -17,14 +17,14 @@
 			{% endif %}
 		{% endwith %}
 	</div>
-	<a href="#">Create a New Menu Item</a>
+	<a href="{{ url_for('newMenuItem', restaurant_id = restaurant.id) }}">Create a New Menu Item</a>
 	{% for item in items %}
 		<h2>{{ item.name }}</h2>
 		<p>{{ item.course }}</p>
 		<p>{{ item.price }}</p>
 		<p>{{ item.description }}</p>
-		<a href = '#'>Edit Menu Item</a>
-		<a href = '#'>Delete Menu Item</a>
+		<a href = "{{ url_for('editMenuItem', restaurant_id = restaurant.id, menu_id = item.id )}}">Edit Menu Item</a>
+		<a href = "{{ url_for('deleteMenuItem', restaurant_id = restaurant.id, menu_id = item.id )}}">Delete Menu Item</a>
 	{% endfor %}
 </body>
 </html>

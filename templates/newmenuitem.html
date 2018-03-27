@@ -5,20 +5,23 @@
     <title>New Menu Item</title>
 </head>
 <body>
-	<h1>{{ restaurant_name }}</h1>
+	<h1>{{ restaurant.name }}</h1>
     <h2>New Menu Item</h2>
-    <form action="#" method="post">
+    <form action="{{ url_for('newMenuItem', restaurant_id = restaurant.id) }}" method="post">
         <p>Name: </p>
         <input type="text" name="namemenu">
-		<p>Course: </p>
-		<input type="text" name="coursemenu">
+        <p>Description: </p>
+		<input type="text" name="descripmenu">
 		<p>Price: </p>
 		<input type="text" name="pricemenu">
-		<p>Description: </p>
-		<input type="text" name="descripmenu">
+		<p>Course: </p>
+		<input type="radio" name="coursemenu" value="Appetizer" checked>Appetizer<br>
+        <input type="radio" name="coursemenu" value="Entree"> Entree<br>
+        <input type="radio" name="coursemenu" value="Dessert"> Dessert<br>
+        <input type="radio" name="coursemenu" value="Beverage"> Beverage
 		<br><br>
-        <input type="submit" value="New">
-        <a href="#">Cancel</a>
+        <input type="submit" value="Create">
+        <a href="{{ url_for('showMenu',restaurant_id =  restaurant.id) }}">Cancel</a>
     </form>
 </body>
 </html>
