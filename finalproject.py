@@ -1,4 +1,4 @@
-from flask import Flask,render_template, flash, request, url_for, redirect
+from flask import Flask,render_template, flash, request, url_for, redirect, jsonify
 from os import urandom #Secret key
 app = Flask(__name__)
 
@@ -131,6 +131,25 @@ def deleteMenuItem(restaurant_id, menu_id):
         return redirect(url_for('showMenu', restaurant_id = restaurant_id))
     else:
         return render_template('deletemenuitem.html', restaurant = restaurant, item = item)
+
+#API endpoints
+#All restaurantas
+@app.route('/restaurants/JSON')
+def restaurantsJSON():
+    restaurants = session.query(Restaurant).all()
+    return jsonify(Restaurants = [restaurant.serialize for restaurant in restaurants])
+
+#Restaurant's menu
+@app.route('/restaurants/<int:restaurant_id>/menu/JSON')
+def showMenuJSON(restaurant_id):
+    menuItems = session.query(MenuItem).filter_by(restaurant_id = restaurant_id).all()
+    return jsonify(MenuItems = [item.serialize for item in menuItems])
+
+# Specific Menu item
+@app.route('/restaurants/<int:restaurant_id>/menu/<int:menu_id>/JSON')
+def showMenuItemJSON(restaurant_id, menu_id):
+    menuItem = session.query(MenuItem).filter_by(id = menu_id, restaurant_id = restaurant_id).one()
+    return jsonify(MenuItem = menuItem.serialize)
 
 
 if __name__ == '__main__':
